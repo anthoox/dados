@@ -9,31 +9,25 @@
 }
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
-
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin: 0;
-    padding: 0;
-
 }
 
 body {
     background-color: var(--color2);
-
+    height: 100vh;
 }
 
 .cabecera {
     background-color: var(--color5);
-    height: 80px;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -41,58 +35,48 @@ body {
 }
 
 .titulo-web {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     color: var(--color6);
 }
 
 .main {
     background-color: var(--color1);
+    height: 75%;
 }
 
 article {
     width: 100%;
-    min-width: 300px;
 }
 
 .instrucciones {
-    height: 20%;
-    min-height: 200px;
+    height: 30%;
     width: 100%;
     background-color: var(--color3);
-    padding: 3em 5em;
-
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cnt-intrucciones {
-    margin: 0 auto;
-    max-width: 1600px;
-}
 
-.titulo-h2 {
-    font-size: 1.5em;
+.titulo-p {
+    font-size: 1.1em;
 }
 
 .instruccion {
-    margin: .5rem 1em 0 2em;
+    margin-left: 1.5em;
 }
-
-.pista {
-    margin: .5rem 0 0 2.5em;
-}
-
 
 /*--//-----contenedor Juego de dados-----//--*/
 .juego {
     width: 100%;
-    height: 40%;
-    min-height: 500px;
+    height: 80%;
     background-color: var(--color4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3em;
 }
 
 /*--//-----FIN contenedor Juego de dados-----//--*/
@@ -102,12 +86,13 @@ article {
 .cnt-dados {
     transition: all 250ms;
     position: relative;
-    margin: auto;
     perspective: 5000px;
     perspective-origin: -500px -2000px;
     background-color: var(--color5);
-    width: 500px;
-    height: 400px;
+    width: 70%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,20 +105,7 @@ article {
         0px 16px 56px rgba(120, 104, 230, 0.37);
 }
 
-@media (max-width: 578px) {
 
-
-    .cnt-dados {
-        width: 380px;
-    }
-}
-
-@media (max-width: 498px) {
-    .cnt-dados {
-        width: 300px;
-
-    }
-}
 
 
 .cnt-dados:active {
@@ -141,7 +113,7 @@ article {
 }
 
 .dado-1 {
-    margin: auto;
+
     width: 100px;
     height: 100px;
     position: relative;
@@ -149,7 +121,7 @@ article {
 
 .lado {
     position: absolute;
-    margin: auto;
+
     width: 100px;
     border-radius: 10PX;
     border: 2px solid var(--color1);
@@ -163,7 +135,6 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .punto {
@@ -209,7 +180,6 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .lado5 {
@@ -234,6 +204,8 @@ article {
     transform: rotateY(120deg);
     animation: rotar 4s infinite linear;
 }
+
+
 
 
 @keyframes rotar {
@@ -286,10 +258,11 @@ article {
 .cnt-dados-2d {
     transition: all 250ms;
     position: relative;
-    margin: auto;
     background-color: var(--color5);
-    width: 500px;
-    height: 400px;
+    width: 70%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,32 +279,15 @@ article {
     scale: 0.9;
 }
 
-@media (max-width: 578px) {
-
-
-    .cnt-dados-2d {
-        width: 380px;
-    }
-}
-
-@media (max-width: 498px) {
-    .cnt-dados-2d {
-        width: 300px;
-
-    }
-}
-
 .dados-2d {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.dado-2d {
     transition: all 0.25s;
     z-index: 1;
 }
+
 
 @keyframes rotar2 {
     0% {
@@ -370,30 +326,23 @@ article {
 
 
 /*--//-----Botones-----//--*/
-.cnt-botones {
-    width: 100%;
-    margin: auto;
+
+
+.botones {
+
     margin-top: 1em;
-
-}
-
-.botones,
-.botones2 {
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-
 }
 
 button {
     transition: all 250ms;
     display: block;
-    margin: auto;
     padding: 0.5em;
     width: 100px;
     height: 45px;
+    cursor: pointer;
     color: var(--color5);
     border-radius: 25px;
     background-color: var(--color6);
@@ -408,14 +357,7 @@ button {
         0px 16px 56px rgba(120, 104, 230, 0.37);
 }
 
-:root {
-    --color1: rgb(0, 0, 0);
-    --color2: rgb(228, 251, 255);
-    --color3: rgb(237, 238, 247);
-    --color4: rgb(184, 181, 255);
-    --color5: rgb(120, 104, 230);
-    --color6: rgb(255, 255, 255);
-}
+
 
 button:hover {
 
@@ -435,71 +377,22 @@ button:active {
 
 
 
-
-/*--//-----Resumen/pasos-----//--*/
-
-.pasos {
-    width: 100%;
-    height: 20%;
-    min-height: 200px;
-    background-color: var(--color3);
-    padding: 3em 5em;
-
-}
-
-.pasos-p {
-    margin: .5rem 1em 0 1em;
-}
-
-
-.cnt-pasos {
-
-    margin: auto;
-    max-width: 1600px;
-    height: 100%;
-    text-align: justify;
-
-}
-
-/*--//-----FIN Resumen/pasos-----//--*/
-
-
-
-
 /*--//-----FOOTER-----//--*/
 
 footer {
     background-color: var(--color5);
     width: 100%;
-    height: 20%;
-    min-height: 200px;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 1em;
-
 }
 
-.cnt-footer {
-    margin: auto;
-    max-width: 1600px;
-}
+
 
 .img-logo {
-
-    width: 150px;
+    width: 125px;
 }
 
-.p-footer {
-    color: var(--color6);
-    margin: 1em;
-    display: flex;
-    text-align: center;
-}
 
 /*--//-----FIN FOOTER-----//--*/
-
-.entrada {
-    font-size: 1.2em;
-}
