@@ -33,12 +33,14 @@ function tirarDado3D() {
     //Generamos una variable de contenido aleatorio para cuando se selecciones una cara. 
     lado = Math.floor(Math.random() * 6);
     setTimeout(function () {//usamos setTimeout para poder aplicar la animación rotar, sino directamente se iria a la cara.
-        switch (lado) {
+        switch (1) {
             case 0:
+                // 1
                 dado.style.animation = 'rotar 0.25s linear';
                 dado.style.transform = 'rotateY(120deg) rotateX(90deg) rotateZ(90deg)';
                 break;
             case 1:
+                // 2
                 dado.style.animation = 'rotar 0.25s linear';
                 dado.style.transform = 'rotateY(120deg) rotateX(180deg) rotateZ(90deg)';
                 break;

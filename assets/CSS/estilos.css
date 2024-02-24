@@ -87,7 +87,7 @@ article {
     transition: all 250ms;
     position: relative;
     perspective: 5000px;
-    perspective-origin: -500px -2000px;
+    perspective-origin: -500px -2300px;
     background-color: var(--color5);
     width: 70%;
     height: 50%;
@@ -396,3 +396,16 @@ footer {
 
 
 /*--//-----FIN FOOTER-----//--*/
+
+@media (width > 500px) {
+
+    .cnt-dados {
+
+        width: 500px;
+        height: 500px;
+
+
+    }
+
+
+}
